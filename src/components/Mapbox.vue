@@ -1,23 +1,18 @@
 <template>
-    <Page class="page">
-        <ActionBar class="action-bar" title="Vue Mapbox Example"></ActionBar>
-        <GridLayout>
-            <Mapbox
-                accessToken=process.env.MAPBOX_ACCESS_TOKEN
-                mapStyle="traffic_day"
-                latitude="52.3833160"
-                longitude="4.8991780"
-                hideCompass="true"
-                zoomLevel="4"
-                showUserLocation="false"
-                disableZoom="false"
-                disableRotation="false"
-                disableScroll="false"
-                disableTilt="false"
-                @mapReady="onMapReady($event)">
-            </Mapbox>
-        </GridLayout>
-    </Page>
+    <Mapbox
+        accessToken=process.env.MAPBOX_ACCESS_TOKEN
+        mapStyle="traffic_day"
+        latitude="52.3833160"
+        longitude="4.8991780"
+        hideCompass="true"
+        zoomLevel="4"
+        showUserLocation="false"
+        disableZoom="false"
+        disableRotation="false"
+        disableScroll="false"
+        disableTilt="false"
+        @mapReady="onMapReady($event)">
+    </Mapbox>
 </template>
 
 <script>
